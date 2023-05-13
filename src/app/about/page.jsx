@@ -3,6 +3,7 @@ import profilePic from "../../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
 import AnimatedNumber from "../components/AnimatedNumber";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 
 export const metadata = {
   title: "Yaswanth Gosula - About",
@@ -72,6 +73,7 @@ const page = () => {
         </div>
       </div>
       <Skills />
+      <Experience />
     </main>
   );
 };
