@@ -12,7 +12,13 @@ const Footer = () => {
             Yaswanth Gosula
           </Link>
         </div>
-        <Link href="/" className="underline underline-offset-2">Say Hello</Link>
+        <Link
+          href="https://calendly.com/yaswanth5/30min"
+          target={"_blank"}
+          className="underline underline-offset-2"
+        >
+          Say Hello
+        </Link>
       </div>
     </footer>
   );

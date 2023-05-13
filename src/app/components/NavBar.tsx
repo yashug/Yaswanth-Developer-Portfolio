@@ -18,7 +18,7 @@ const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
-        className={`h-[1px] inline-block absolute bg-dark -bottom-0.5 left-0 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1px] inline-block absolute bg-dark -bottom-0.5 left-0 group-hover:w-full transition-[width] ease duration-300 dark:bg-lite ${
           path === href ? "w-full" : "w-0"
         }`}
       >
@@ -30,11 +30,11 @@ const CustomLink = ({ href, title, className = "" }: CustomLinkProps) => {
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 flex items-center justify-between">
+    <header className="w-full px-32 py-8 flex items-center justify-between font-medium">
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
-        <CustomLink href="/projects" title="Porjects" className="mx-4" />
+        <CustomLink href="/projects" title="Projects" className="mx-4" />
         <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
       <nav className="flex justify-center items-center flex-wrap">
