@@ -10,7 +10,7 @@ export const metadata = {
   title: "Yaswanth Gosula - About",
 };
 
-const page = () => {
+const about = () => {
   return (
     <main className="flex w-full flex-col items-center justify-center pt-16">
       <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
@@ -80,4 +80,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default about;
