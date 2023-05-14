@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${monserrat.variable} font-mont bg-light w-full min-h-screen`}
+        suppressHydrationWarning={true}
       >
         <NavBar />
         <main className="flex items-center w-full min-h-screen text-dark">
