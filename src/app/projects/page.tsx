@@ -12,9 +12,9 @@ const projects = () => {
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <AnimatedText
         text="Imagination Trumps Knowledge!"
-        className="mb-16 mt-16"
+        className="mb-16 mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
       />
-      <div className="grid grid-cols-12 gap-24 gap-y-32">
+      <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
         <div className="col-span-12">
           <FeaturedProject
             title="Crypto Screener Application"
@@ -27,7 +27,7 @@ local currency."
             type="Featured Project"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 sm:col-span-12">
           <Project
             title="Crypto Screener Application"
             img={project1}
@@ -36,7 +36,7 @@ local currency."
             type="Featured Project"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 sm:col-span-12">
           <Project
             title="Crypto Screener Application"
             img={project1}
@@ -57,7 +57,7 @@ local currency."
             type="Featured Project"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 sm:col-span-12">
           <Project
             title="Crypto Screener Application"
             img={project1}
@@ -66,7 +66,7 @@ local currency."
             type="Featured Project"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 sm:col-span-12">
           <Project
             title="Crypto Screener Application"
             img={project1}
