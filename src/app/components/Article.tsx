@@ -16,10 +16,13 @@ const Article = ({ image, title, date, link }: ArticleProps) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.25, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
+       dark:border-light dark:bg-dark dark:text-light"
     >
       <MovingImage title={title} img={image} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </span>
     </motion.li>
   );
 };

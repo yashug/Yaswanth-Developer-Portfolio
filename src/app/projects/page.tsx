@@ -9,7 +9,7 @@ export const metadata = {
 
 const projects = () => {
   return (
-    <main className="w-full mb-16 flex flex-col items-center justify-center">
+    <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <AnimatedText
         text="Imagination Trumps Knowledge!"
         className="mb-16 mt-16"

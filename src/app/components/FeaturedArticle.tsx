@@ -21,7 +21,7 @@ const FeaturedArticle = ({
   link,
 }: FeaturedArticleProps) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative">
+    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative dark:border-light dark:bg-dark">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
       <Link
         href={link}
@@ -42,7 +42,7 @@ const FeaturedArticle = ({
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
     </li>
   );
 };
