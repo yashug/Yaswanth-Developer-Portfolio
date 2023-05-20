@@ -12,9 +12,9 @@ const articles = () => {
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <AnimatedText
         text="Words Can Change The World!"
-        className="mb-16 mt-16"
+        className="mb-16 mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
       />
-      <ul className="grid grid-cols-2 gap-16">
+      <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
         <FeaturedArticle
           title="Build A Custom Pagination Component In Reactjs From Scratch"
           summary="Learn how to build a custom pagination component in ReactJS from scratch. 
