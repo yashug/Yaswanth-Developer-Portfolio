@@ -38,7 +38,7 @@ export default function Home() {
               hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
             >
               Resume
-              <LinkArrow className="w-6 ml-1" />
+              <LinkArrow className="!w-6 ml-1 md:!w-4" />
             </Link>
             <Link
               href="mailto:gosulayaswanth2@gmail.com"
