@@ -3,10 +3,10 @@ import { useMotionValue, useSpring, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const AnimatedNumber = ({ value }: { value: number }) => {
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, {once: true});
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInView) {
