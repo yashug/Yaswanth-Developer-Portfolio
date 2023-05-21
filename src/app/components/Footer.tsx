@@ -16,7 +16,7 @@ const Footer = () => {
           </Link>
         </div>
         <Link
-          href="https://calendly.com/yaswanth5/30min"
+          href="https://cal.com/yaswanthg/30min"
           target={"_blank"}
           className="underline underline-offset-2"
         >

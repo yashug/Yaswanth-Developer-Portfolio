@@ -23,25 +23,22 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-center justify-between ml-4 xs:ml-2">
           <EducationDetails
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Bachelor Of Technology"
+            time="2009-2013"
+            place="Indian Institute Of Technology, Guwahati (IIT-G)"
+            info="Acquired in-depth knowledge of computer science concepts, including programming, algorithms, data structures, and software engineering. Developed strong problem-solving and analytical skills through rigorous coursework and hands-on projects"
           />
           <EducationDetails
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Board of Intermediate Education"
+            time="2007-2009"
+            place="Narayana Junior College"
+            info="Science-focused program emphasizing physics, chemistry, and mathematics. Developed strong analytical skills through problem-solving and practical experiments."
           />
           <EducationDetails
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            type="Board of Secondary Education"
+            time="2006-2007"
+            place="Z P P High School"
+            info="Well-rounded curriculum emphasizing mathematics, science, language arts, and social sciences. Developed strong academic foundation and effective communication skills. Demonstrated diligence and commitment to learning."
           />
         </ul>
       </div>
