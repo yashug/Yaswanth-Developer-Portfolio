@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${monserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}
+        className={`${monserrat.variable} font-mont bg-light w-full min-h-screen h-full dark:bg-dark`}
         suppressHydrationWarning={true}
       >
         <NavBar />
         <main className="flex items-center w-full min-h-screen text-dark">
-          <div className="w-full h-full inline-block z-0 bg-light p-32 pt-0 dark:bg-dark xl:p-24 lg:p-16 md:p-12 sm:p-8">
+          <div className="w-full h-full inline-block z-0 bg-light p-32 pt-0 dark:bg-dark xl:p-24 lg:p-16 md:p-12 sm:p-8 xl:pt-0 lg:pt-3">
             {children}
           </div>
         </main>

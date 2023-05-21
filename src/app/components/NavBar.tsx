@@ -85,6 +85,7 @@ const NavBar = () => {
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
       >
+        <span className="sr-only">Open main menu</span>
         <span
           className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
@@ -102,7 +103,7 @@ const NavBar = () => {
         ></span>
       </button>
       <div className="w-full flex justify-between items-center lg:hidden">
-        <nav>
+        <nav className="flex items-center justify-center">
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
@@ -138,14 +139,14 @@ const NavBar = () => {
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            className={`w-6 h-6 ml-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className="fill-dark" />
-            ) : (
               <MoonIcon className="fill-dark" />
+            ) : (
+              <SunIcon className="fill-dark" />
             )}
           </button>
         </nav>
@@ -154,10 +155,10 @@ const NavBar = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
-          className="min-w-[70vw] flex flex-col justify-between items-center z-30 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
-      bg-dark/90 dark:bg-light/75 rounded-lg py-32 backdrop-blur-md"
+          className="min-w-[70vw] flex flex-col justify-between items-center z-50 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+      bg-dark/90 dark:bg-light/75 rounded-lg py-32 backdrop-blur-md sm:min-w-[90vh]"
         >
-          <nav className="flex items-center flex-col justify-center">
+          <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
               href="/"
               title="Home"
@@ -183,11 +184,11 @@ const NavBar = () => {
               toggle={handleClick}
             />
           </nav>
-          <nav className="flex justify-center items-center flex-wrap mt-2">
+          <nav className="flex justify-center items-center mt-2">
             <motion.a
               href="https://github.com/yashug"
               target="_blank"
-              className="w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1"
+              className="w-6 m-1 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -196,7 +197,7 @@ const NavBar = () => {
             <motion.a
               href="https://www.linkedin.com/in/yaswanthg5"
               target="_blank"
-              className="w-6 mx-3 sm:mx-1"
+              className="w-6 m-1 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -205,7 +206,7 @@ const NavBar = () => {
             <motion.a
               href="https://twitter.com/urstrulyyashu5"
               target="_blank"
-              className="w-6 ml-3 sm:mx-1"
+              className="w-6 m-1 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -213,14 +214,14 @@ const NavBar = () => {
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+              className={`w-6 h-6 ml-3 flex items-center justify-center rounded-full p-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
             >
               {mode === "dark" ? (
-                <SunIcon className="fill-dark sm:mx-1" />
-              ) : (
                 <MoonIcon className="fill-dark sm:mx-1" />
+              ) : (
+                <SunIcon className="fill-dark sm:mx-1" />
               )}
             </button>
           </nav>
