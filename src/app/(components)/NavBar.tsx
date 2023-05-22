@@ -58,6 +58,7 @@ const CustomMobileLink = ({
     <button
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
+      aria-label={title}
     >
       {title}
       <span
@@ -84,6 +85,7 @@ const NavBar = () => {
       <button
         className="flex-col justify-center items-center hidden lg:flex"
         onClick={handleClick}
+        aria-label="menu"
       >
         <span className="sr-only">Open main menu</span>
         <span
@@ -116,6 +118,7 @@ const NavBar = () => {
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my github profile"
           >
             <GithubIcon />
           </motion.a>
@@ -125,6 +128,7 @@ const NavBar = () => {
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my linkedin profile"
           >
             <LinkedInIcon />
           </motion.a>
@@ -134,6 +138,7 @@ const NavBar = () => {
             className="w-6 ml-3"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my twitter profile"
           >
             <TwitterIcon />
           </motion.a>
@@ -142,6 +147,7 @@ const NavBar = () => {
             className={`w-6 h-6 ml-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
+            aria-label="theme-mode"
           >
             {mode === "dark" ? (
               <MoonIcon className="fill-dark" />
@@ -214,9 +220,10 @@ const NavBar = () => {
             </motion.a>
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`w-6 h-6 ml-3 flex items-center justify-center rounded-full p-1 ${
+              className={`w-6 h-6 ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
+              aria-label="theme-mode"
             >
               {mode === "dark" ? (
                 <MoonIcon className="fill-dark sm:mx-1" />

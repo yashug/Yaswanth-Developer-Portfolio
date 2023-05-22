@@ -1,18 +1,20 @@
-import AnimatedText from "../components/AnimatedText";
+import AnimatedText from "../(components)/AnimatedText";
 import profilePic from "../../../public/images/profile/developer-pic-2.jpg";
 import Image from "next/image";
-import AnimatedNumber from "../components/AnimatedNumber";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Education from "../components/Education";
+import AnimatedNumber from "../(components)/AnimatedNumber";
+import Skills from "../(components)/Skills";
+import Experience from "../(components)/Experience";
+import Education from "../(components)/Education";
 
 export const metadata = {
   title: "Yaswanth Gosula - About",
+  description:
+    "Learn more about Yaswanth Gosula, a Next.js developer with a passion for creating innovative solutions. Discover tips for building a developer portfolio and insights on front-end development.",
 };
 
 const about = () => {
   return (
-    <main className="flex w-full flex-col items-center justify-center pt-16 dark:text-light">
+    <main className="flex w-full flex-col items-center justify-center pt-16 dark:text-light sm:pt-8">
       <AnimatedText
         text="Passion Drives Purpose!"
         className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
@@ -23,11 +25,12 @@ const about = () => {
             Biography
           </h2>
           <p className="font-medium">
-            Hi, I&apos;m <strong>Yaswanth</strong>, an experienced frontend web developer with a
-            strong passion for creating exceptional digital experiences. With 10
-            years of expertise, I specialize in delivering high-quality and
-            user-friendly websites. My focus goes beyond writing clean code – I
-            strive to optimize user experiences and ensure seamless navigation.
+            Hi, I&apos;m <strong>Yaswanth Gosula</strong>, an experienced
+            frontend web developer with a strong passion for creating
+            exceptional digital experiences. With 10 years of expertise, I
+            specialize in delivering high-quality and user-friendly websites. My
+            focus goes beyond writing clean code – I strive to optimize user
+            experiences and ensure seamless navigation.
           </p>
           <p className="my-4 font-medium">
             From building responsive websites to developing interactive web

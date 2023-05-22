@@ -1,10 +1,16 @@
 import Image from "next/image";
 import profilePic from "../../public/images/profile/developer-pic-1.png";
-import AnimatedText from "./components/AnimatedText";
+import AnimatedText from "./(components)/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "./components/Icons";
-import HireMe from "./components/HireMe";
+import { LinkArrow } from "./(components)/Icons";
+import HireMe from "./(components)/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+
+export const metadata = {
+  title: "Yaswanth Gosula - Home",
+  description:
+    "Explore Yaswanth Gosula's Next.js developer portfolio and discover the latest webapp projects and software engineering articles. Showcase your skills as a frontend developer and software engineer.",
+};
 
 export default function Home() {
   return (

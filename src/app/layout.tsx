@@ -1,5 +1,5 @@
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "./(components)/NavBar";
+import Footer from "./(components)/Footer";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Script from "next/script";
@@ -23,7 +23,7 @@ export default function RootLayout({
       >
         <NavBar />
         <main className="flex items-center w-full min-h-screen text-dark">
-          <div className="w-full h-full inline-block z-0 bg-light p-32 pt-0 dark:bg-dark xl:p-24 lg:p-16 md:p-12 sm:p-8 xl:pt-0 lg:pt-3">
+          <div className="w-full h-full inline-block z-0 bg-light p-32 pt-0 dark:bg-dark xl:p-24 lg:p-16 md:p-12 sm:p-8 xl:pt-0 lg:pt-3 sm:pt-0">
             {children}
           </div>
         </main>

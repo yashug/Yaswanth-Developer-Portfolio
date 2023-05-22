@@ -1,10 +1,12 @@
-import AnimatedText from "../components/AnimatedText";
-import FeaturedArticle from "../components/FeaturedArticle";
-import Article from "../components/Article";
+import AnimatedText from "../(components)/AnimatedText";
+import FeaturedArticle from "../(components)/FeaturedArticle";
+import Article from "../(components)/Article";
 import article1 from "../../../public/images/articles/create loading screen in react js.jpg";
 
 export const metadata = {
   title: "Yaswanth Gosula - Articles",
+  description:
+    "Browse through Yaswanth Gosula's collection of software engineering articles and tutorials on Next.js, React.js, web development, and more.  Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio.",
 };
 
 const articles = () => {
@@ -12,7 +14,7 @@ const articles = () => {
     <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
       <AnimatedText
         text="Words Can Change The World!"
-        className="mb-16 mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+        className="mb-16 mt-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl sm:mt-8"
       />
       <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
         <FeaturedArticle
