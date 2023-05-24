@@ -49,7 +49,7 @@ const Project = ({ title, type, img, link, github }: ProjectProps) => {
           >
             Visit
           </Link>
-          <Link href={github} target="_blank" className="w-8 md:w-6">
+          <Link href={github} target="_blank" className="w-8 md:w-6" aria-label={`${title} github link`}>
             <GithubIcon />
           </Link>
         </div>
