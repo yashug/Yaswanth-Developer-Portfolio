@@ -29,8 +29,7 @@ const Experience = () => {
             companyLink="https://www.sitedocs.com/"
             time="Nov 2019-Present"
             address="Remote"
-            work="Created a powerful web application for monitoring scheduled tasks and their statuses. Users can efficiently manage tasks with customizable filters and seamless navigation. The app also facilitates form scheduling and signature assignment for safety compliance on construction sites, enhancing productivity and workflow management.
-"
+            work="Transitioned to Sitedocs post-acquisition, developed a robust web app for monitoring scheduled tasks, enabling efficient task management with customizable filters and streamlined navigation. Integrated form scheduling and signature assignment for enhanced safety compliance on construction sites, boosting productivity and workflow management."
           />
           <ExperienceDetails
             position="Frontend Software Engineer"
@@ -38,7 +37,7 @@ const Experience = () => {
             companyLink="https://www.crossover.com/"
             time="Nov 2019-May 2021"
             address="Remote"
-            work="Built a React-based SPA enabling user chat functionality, rewrote Angular pages into React for improved performance, and introduced a storybook design system across multiple web applications, reducing development time"
+            work="Collaborated with Sitedocs as a client under the Crossover system, Built a React-based SPA enabling user chat functionality, rewrote Angular pages into React for improved performance, and introduced a storybook design system across multiple web applications, reducing development time"
           />
           <ExperienceDetails
             position="Principal Software Engineer"

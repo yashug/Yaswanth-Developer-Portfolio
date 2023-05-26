@@ -13,6 +13,7 @@ type FeaturedProjectProps = {
   img: StaticImageData;
   link: string;
   github: string;
+  isPrivate?: boolean;
 };
 
 const FeaturedProject = ({
@@ -22,6 +23,7 @@ const FeaturedProject = ({
   img,
   link,
   github,
+  isPrivate = false,
 }: FeaturedProjectProps) => {
   return (
     <article
@@ -61,18 +63,22 @@ const FeaturedProject = ({
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <Link
-            href={github}
-            target="_blank"
-            className="w-10"
-            aria-label={`${title} github link`}
-          >
-            <GithubIcon />
-          </Link>
+          {!isPrivate && (
+            <Link
+              href={github}
+              target="_blank"
+              className="w-10"
+              aria-label={`${title} github link`}
+            >
+              <GithubIcon />
+            </Link>
+          )}
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className={`ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base ${
+              isPrivate && "ml-0"
+            }`}
           >
             Visit Project
           </Link>
