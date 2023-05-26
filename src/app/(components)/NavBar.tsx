@@ -3,6 +3,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import {
   GithubIcon,
+  HashNodeIcon,
   LinkedInIcon,
   MoonIcon,
   SunIcon,
@@ -109,7 +110,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
         </nav>
         <nav className="flex justify-center items-center flex-wrap">
           <motion.a
@@ -131,6 +132,16 @@ const NavBar = () => {
             aria-label="Checkout my linkedin profile"
           >
             <LinkedInIcon />
+          </motion.a>
+          <motion.a
+            href="https://yg.hashnode.dev/"
+            target="_blank"
+            className="w-6 mx-3"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            aria-label="Checkout my hashnode profile"
+          >
+            <HashNodeIcon className="dark:fill-white"/>
           </motion.a>
           <motion.a
             href="https://twitter.com/urstrulyyashu5"
@@ -183,12 +194,12 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href="/articles"
               title="Articles"
               className=""
               toggle={handleClick}
-            />
+            /> */}
           </nav>
           <nav className="flex justify-center items-center mt-2">
             <motion.a
@@ -197,6 +208,7 @@ const NavBar = () => {
               className="w-6 m-1 mr-3 bg-light rounded-full dark:bg-dark sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my github profile"
             >
               <GithubIcon />
             </motion.a>
@@ -206,8 +218,19 @@ const NavBar = () => {
               className="w-6 m-1 mx-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my linkedin profile"
             >
               <LinkedInIcon />
+            </motion.a>
+            <motion.a
+              href="https://yg.hashnode.dev/"
+              target="_blank"
+              className="w-6 m-1 mx-3 sm:mx-1"
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my hashnode profile"
+            >
+              <HashNodeIcon className="dark:fill-white"/>
             </motion.a>
             <motion.a
               href="https://twitter.com/urstrulyyashu5"
@@ -215,6 +238,7 @@ const NavBar = () => {
               className="w-6 m-1 ml-3 sm:mx-1"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
+              aria-label="Checkout my twitter profile"
             >
               <TwitterIcon />
             </motion.a>

@@ -57,6 +57,17 @@ export const LinkedInIcon = ({ className, ...rest }: IconProps) => (
   </svg>
 );
 
+export const HashNodeIcon = ({ className, ...rest }: IconProps) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 512 512"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <path d="M35.19 171.1c-46.91 46-46.91 122.9 0 169.8L171.1 476.8c46 46.9 122.9 46.9 169.8 0l135.9-135.9c46.9-46.9 46.9-123.8 0-169.8L340.9 35.19c-46.9-46.91-123.8-46.91-169.8 0L35.19 171.1zM315.5 315.5c-32.9 32.8-86.1 32.8-118.9 0-32.9-32.9-32.9-86.1 0-118.9 32.8-32.9 86-32.9 118.9 0 32.8 32.8 32.8 86 0 118.9z" />
+  </svg>
+);
+
 export const SunIcon = ({ className, ...rest }: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,8 +107,7 @@ export const SunIcon = ({ className, ...rest }: IconProps) => (
         fill="currentColor"
         d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
         opacity="0"
-      >
-      </path>
+      ></path>
     </g>
     <g fill="currentColor" fillOpacity="0">
       <path d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z">
