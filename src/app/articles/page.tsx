@@ -3,6 +3,8 @@ import FeaturedArticle from "../(components)/FeaturedArticle";
 import Article from "../(components)/Article";
 import article1 from "../../../public/images/articles/article_list.png";
 import article2 from "../../../public/images/articles/article_portfolio.png";
+import article3 from "../../../public/images/articles/article_redirect.png";
+import article4 from "../../../public/images/articles/article_state.png";
 
 export const metadata = {
   title: "Yaswanth Gosula - Articles",
@@ -33,23 +35,23 @@ const articles = () => {
           img={article2}
         />
       </ul>
-      {/* <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+      <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
         All Articles
       </h2>
       <ul className="w-full">
         <Article
-          title="Build A Custom Pagination Component In Reactjs From Scratch"
-          date="May 20, 2023"
-          link="/"
-          image={article1}
+          title="Unleashing React's Hidden Power: Conquering the State Persistence Bug!"
+          date="Jun 30, 2023"
+          link="https://yg.hashnode.dev/unleashing-reacts-hidden-power-conquering-the-state-persistence-bug"
+          image={article4}
         />
         <Article
-          title="Build A Custom Pagination Component In Reactjs From Scratch"
-          date="May 20, 2023"
-          link="/"
-          image={article2}
+          title="Unveiling JavaScript's Sneaky Redirect Vulnerability"
+          date="Jun 16, 2023"
+          link="https://yg.hashnode.dev/unveiling-javascripts-sneaky-redirect-vulnerability-can-you-spot-the-threat"
+          image={article3}
         />
-      </ul> */}
+      </ul>
     </main>
   );
 };
