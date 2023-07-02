@@ -134,7 +134,7 @@ const NavBar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://blog.yg-dev.dev/"
+            href="https://blog.yg-dev.com/"
             target="_blank"
             className="w-6 mx-3"
             whileHover={{ y: -2 }}
