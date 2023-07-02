@@ -24,7 +24,7 @@ const articles = () => {
           title="Boost React List Performance"
           summary="Discover how to optimize the performance of your React lists by leveraging React.memo, useCallback, and proven optimization techniques, enhancing your application's speed and responsiveness"
           time="12 min read"
-          link="https://yg.hashnode.dev/boost-react-list-performance-unleashing-efficiency-with-reactmemo-usecallback-and-proven-optimization-techniques"
+          link="https://blog.yg-dev.com/boost-react-list-performance-unleashing-efficiency-with-reactmemo-usecallback-and-proven-optimization-techniques"
           img={article1}
         />
         <FeaturedArticle
@@ -42,13 +42,13 @@ const articles = () => {
         <Article
           title="Unleashing React's Hidden Power: Conquering the State Persistence Bug!"
           date="Jun 30, 2023"
-          link="https://yg.hashnode.dev/unleashing-reacts-hidden-power-conquering-the-state-persistence-bug"
+          link="https://blog.yg-dev.com/unleashing-reacts-hidden-power-conquering-the-state-persistence-bug"
           image={article4}
         />
         <Article
           title="Unveiling JavaScript's Sneaky Redirect Vulnerability"
           date="Jun 16, 2023"
-          link="https://yg.hashnode.dev/unveiling-javascripts-sneaky-redirect-vulnerability-can-you-spot-the-threat"
+          link="https://blog.yg-dev.com/unveiling-javascripts-sneaky-redirect-vulnerability-can-you-spot-the-threat"
           image={article3}
         />
       </ul>
