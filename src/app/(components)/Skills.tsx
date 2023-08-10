@@ -45,6 +45,7 @@ const Skills = () => {
         <Skill name="Typescript" x="0vw" y="-22vw" />
         <Skill name="Material UI" x="-25vw" y="18vw" />
         <Skill name="Tailwind CSS" x="18vw" y="18vw" />
+        <Skill name="GraphQL" x="5vw" y="25vw" />
       </div>
     </>
   );
