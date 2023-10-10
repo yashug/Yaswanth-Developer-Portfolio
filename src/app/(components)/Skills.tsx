@@ -46,6 +46,7 @@ const Skills = () => {
         <Skill name="Material UI" x="-25vw" y="18vw" />
         <Skill name="Tailwind CSS" x="18vw" y="18vw" />
         <Skill name="GraphQL" x="5vw" y="25vw" />
+        <Skill name="Webpack" x="-10vw" y="-28vw" />
       </div>
     </>
   );

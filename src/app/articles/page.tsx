@@ -40,6 +40,12 @@ const articles = () => {
       </h2>
       <ul className="w-full">
         <Article
+          title="Thriving in Tech Through Open Source Adventures: A Guide for All"
+          date="Sep 22, 2023"
+          link="https://blog.yg-dev.com/thriving-in-tech-through-open-source-adventures-a-guide-for-all"
+          image={article4}
+        />
+        <Article
           title="Unleashing React's Hidden Power: Conquering the State Persistence Bug!"
           date="Jun 30, 2023"
           link="https://blog.yg-dev.com/unleashing-reacts-hidden-power-conquering-the-state-persistence-bug"
