@@ -5,6 +5,7 @@ import article1 from "../../../public/images/articles/article_list.png";
 import article2 from "../../../public/images/articles/article_portfolio.png";
 import article3 from "../../../public/images/articles/article_redirect.png";
 import article4 from "../../../public/images/articles/article_state.png";
+import article5 from "../../../public/images/articles/article_typescript.jpg";
 
 export const metadata = {
   title: "Yaswanth Gosula - Articles",
@@ -44,6 +45,12 @@ const articles = () => {
           date="Sep 22, 2023"
           link="https://blog.yg-dev.com/thriving-in-tech-through-open-source-adventures-a-guide-for-all"
           image={article4}
+        />
+        <Article
+          title="Mastering Conditional TypeScript Properties: A Trick That Will Make You Smile!"
+          date="Jul 8, 2023"
+          link="https://blog.yg-dev.com/mastering-conditional-typescript-properties-a-trick-that-will-make-you-smile"
+          image={article5}
         />
         <Article
           title="Unleashing React's Hidden Power: Conquering the State Persistence Bug!"

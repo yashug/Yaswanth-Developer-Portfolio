@@ -6,6 +6,7 @@ import project2 from "../../../public/images/projects/PF-Project.png";
 import project3 from "../../../public/images/projects/SC-Project.jpg";
 import project4 from "../../../public/images/projects/DS-Project.jpg";
 import project5 from "../../../public/images/projects/WFS-Project.jpg";
+import project6 from "../../../public/images/projects/Discuss-Project.jpeg";
 
 export const metadata = {
   title: "Yaswanth Gosula - Projects",
@@ -30,6 +31,16 @@ const projects = () => {
             github="/"
             type="Saas Application"
             isPrivate
+          />
+        </div>
+        <div className="col-span-12">
+          <FeaturedProject
+            title="Discuss - Reddit Basic Clone"
+            img={project6}
+            summary="Next.js 14 simple Reddit clone with Server actions, Tailwind, Prisma, Zod, PlanetScale, ShadcnUI and NextAuth."
+            link="https://dub.sh/discuss-reddit"
+            github="https://github.com/yashug/Discuss"
+            type="Saas Application"
           />
         </div>
         <div className="col-span-12">
